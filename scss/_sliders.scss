@@ -1,0 +1,151 @@
+/* Слайдер */
+.slick-slider {
+  position: relative;
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized {
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted {
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+.reviews-slider .slick-track {
+}
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+/* Клонированный слайд */
+.slick-slide.slick-cloned {
+}
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+/* Точки (булиты) */
+.slick-dots {
+}
+.slick-dots li {
+}
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+/* Элемент точки */
+.slick-dots li button {
+}
+
+.hero-slider {
+  position: relative;
+  .slick-arrow {
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    width: 38px;
+    height: 114px;
+    border: none;
+    z-index: 1100;
+    transition: var(--transition);
+    border-radius: 8px;
+    &:hover {
+      background-color: #414344;
+    }
+  }
+
+  .slick-arrow.slick-prev {
+    left: 5px;
+
+    background-image: url("../img/prev.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .slick-arrow.slick-next {
+    right: 5px;
+    background-image: url("../img/next.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .hero-slide {
+    img {
+      margin-left: auto;
+      height: auto;
+    }
+  }
+  .hero-slide-1 {
+    background: linear-gradient(180deg, #05212d 0%, #000000 100%);
+  }
+  .hero-slide-2 {
+    background: linear-gradient(180deg, #0d0d09 0%, #000000 100%);
+  }
+}
+
+/*---------------------------------NEWS---------------------------------------*/
+
+.news-slider {
+}
+.news-item {
+  margin: 0 5px;
+  background: #202020;
+  border-radius: 12px;
+  padding: 17px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+  max-width: 326px;
+  min-width: 300px;
+}
+.label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  width: fit-content;
+}
+.rest {
+  background: #f2994a;
+}
+.news-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.news-previw {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+.offer {
+  background: #ff4136;
+}
+.newslabe {
+  background: #2f80ed;
+}

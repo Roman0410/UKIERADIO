@@ -1,0 +1,222 @@
+.events {
+  .events-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .page-name {
+    font-size: 24px;
+    line-height: 7.5;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  .events-filter {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+  }
+
+  .filter-item {
+    position: relative;
+    a {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+    &::after {
+      content: "";
+      height: 2px;
+      width: 0%;
+      background-color: var(--accent-color);
+      display: block;
+      transition: all 0.2s linear;
+      position: absolute;
+      border-radius: 5px;
+      bottom: -8px;
+      left: 50%;
+      transform: translatex(-50%);
+    }
+    &:hover::after {
+      width: 80%;
+    }
+    .current {
+      &::after {
+        content: "";
+        height: 2px;
+        width: 80%;
+        background-color: var(--accent-color);
+        display: block;
+        transition: all 0.2s linear;
+        position: absolute;
+        border-radius: 12px;
+        bottom: -8px;
+        left: 50%;
+        transform: translatex(-50%);
+      }
+    }
+  }
+}
+
+.events-table {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  .events-item {
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 382px;
+      object-fit: cover;
+    }
+  }
+  .col-1 {
+    display: flex;
+    gap: 32px;
+    .left {
+      width: 64%;
+    }
+    .right {
+      width: 36%;
+    }
+  }
+
+  .col-2 {
+    display: flex;
+    gap: 32px;
+    .left {
+      width: 36%;
+    }
+    .right {
+      width: 64%;
+    }
+  }
+  .col-3 {
+    display: flex;
+    gap: 32px;
+    .left {
+      width: calc((100% - 32px) / 2);
+    }
+    .right {
+      width: calc((100% - 32px) / 2);
+    }
+  }
+  .date {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 18px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+
+    p {
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.5;
+      text-transform: capitalize;
+    }
+  }
+  .event-info {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 32px 20px 20px;
+    background: linear-gradient(to top, #1f1f1f 4.62%, rgba(4, 4, 4, 0) 82.93%);
+    .info {
+      color: rgba(255, 255, 255, 0.7);
+      display: flex;
+      align-items: flex-end;
+      gap: 5px;
+      span {
+        display: block;
+        font-size: 14px;
+        line-height: 1.29;
+        text-transform: capitalize;
+      }
+    }
+    .time {
+    }
+    .place {
+      display: flex !important;
+      align-items: center;
+      gap: 5px;
+      &::after {
+        content: "";
+        width: 4px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.7);
+        display: block;
+        border-radius: 50%;
+      }
+    }
+    .build {
+    }
+    .event-title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 100%;
+      color: #ffffff;
+      margin-top: 12px;
+    }
+  }
+}
+.bazar-prew {
+  .container {
+  }
+  img {
+    max-width: 99px;
+  }
+  .bazar-card {
+    background-image: url("../img/NYUA.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 37px 62px;
+    border-radius: 12px;
+  }
+  .bazar-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .bazar-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  .bazar-about {
+    display: flex;
+    gap: 12px;
+  }
+  .bazar-part {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+  .bazar-vizit {
+  }
+  .btn {
+    width: fit-content;
+    padding: 9px 16px;
+    background-color: #ff4136;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+}

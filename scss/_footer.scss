@@ -1,0 +1,38 @@
+.footer {
+  padding: 100px 148px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  .footer-nav {
+    display: flex;
+    gap: 32px;
+  }
+  .footer-nav-item {
+  }
+  .footer-link {
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.7);
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  .download-list {
+  }
+  .download-item {
+  }
+  .soc-list {
+    display: flex;
+    gap: 10px;
+  }
+  .soc-item {
+  }
+  p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+  }
+}
