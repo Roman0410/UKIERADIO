@@ -487,13 +487,32 @@ header {
   text-transform: capitalize;
   color: #ffffff;
 }
+@media screen and (max-width: 800px) {
+  .events .page-name {
+    display: none;
+  }
+}
 .events .events-filter {
   display: flex;
   align-items: center;
   gap: 21px;
 }
+@media screen and (max-width: 800px) {
+  .events .events-filter {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 0;
+  }
+}
 .events .filter-item {
   position: relative;
+}
+@media screen and (max-width: 800px) {
+  .events .filter-item {
+    width: 33.3333333333%;
+    text-align: center;
+  }
 }
 .events .filter-item a {
   font-weight: 600;
@@ -516,12 +535,12 @@ header {
   transform: translatex(-50%);
 }
 .events .filter-item:hover::after {
-  width: 80%;
+  width: 100%;
 }
 .events .filter-item .current::after {
   content: "";
   height: 2px;
-  width: 80%;
+  width: 100%;
   background-color: var(--accent-color);
   display: block;
   transition: all 0.2s linear;
@@ -550,26 +569,37 @@ header {
 }
 .events-table .col-1 {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 }
 .events-table .col-1 .left {
-  width: 64%;
+  width: calc(60% - 16px);
 }
 .events-table .col-1 .right {
-  width: 36%;
+  width: calc(40% - 16px);
+}
+@media screen and (max-width: 800px) {
+  .events-table .col-1 .left {
+    width: 100%;
+  }
+  .events-table .col-1 .right {
+    width: 100%;
+  }
 }
 .events-table .col-2 {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 }
-.events-table .col-2 .left {
-  width: 36%;
-}
 .events-table .col-2 .right {
-  width: 64%;
+  width: calc(60% - 16px);
+}
+.events-table .col-2 .left {
+  width: calc(40% - 16px);
 }
 .events-table .col-3 {
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
 }
 .events-table .col-3 .left {
@@ -577,6 +607,12 @@ header {
 }
 .events-table .col-3 .right {
   width: calc((100% - 32px) / 2);
+}
+@media screen and (max-width: 800px) {
+  .events-table .right,
+  .events-table .left {
+    width: 100% !important;
+  }
 }
 .events-table .date {
   position: absolute;
@@ -602,6 +638,14 @@ header {
   left: 0px;
   padding: 32px 20px 20px;
   background: linear-gradient(to top, #1f1f1f 4.62%, rgba(4, 4, 4, 0) 82.93%);
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .events-table .event-info {
+    position: static;
+    background: transparent;
+    padding: 20px 0;
+  }
 }
 .events-table .event-info .info {
   color: rgba(255, 255, 255, 0.7);
@@ -614,6 +658,8 @@ header {
   font-size: 14px;
   line-height: 1.29;
   text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .events-table .event-info .place {
   display: flex !important;
