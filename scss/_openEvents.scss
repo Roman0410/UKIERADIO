@@ -1,3 +1,30 @@
+.back {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+  display: none;
+  @media screen and (max-width: 800px) {
+    display: flex;
+  }
+  .backBtn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #414344;
+    border-radius: 8px;
+    padding: 9px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+  .share {
+  }
+}
+
 .eventBanner {
   padding: 0;
   .container {
@@ -43,6 +70,10 @@
       display: flex;
       gap: 10px;
       justify-content: space-between;
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        gap: 24px;
+      }
       .date {
         display: flex;
         gap: 8px;
@@ -156,6 +187,9 @@
   }
   .share {
     cursor: pointer;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
   }
 }
 .sharePopup {

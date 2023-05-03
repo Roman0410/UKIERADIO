@@ -737,6 +737,32 @@ header {
   color: #ffffff;
 }
 
+.back {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 29px;
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .back {
+    display: flex;
+  }
+}
+.back .backBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #414344;
+  border-radius: 8px;
+  padding: 9px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
 .eventBanner {
   padding: 0;
 }
@@ -783,6 +809,12 @@ header {
   display: flex;
   gap: 10px;
   justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .event-card .eventInfo .organisation-info {
+    flex-direction: column;
+    gap: 24px;
+  }
 }
 .event-card .eventInfo .organisation-info .date {
   display: flex;
@@ -895,6 +927,11 @@ header {
 }
 .event-share .share {
   cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .event-share .share {
+    display: none;
+  }
 }
 
 .sharePopup {
