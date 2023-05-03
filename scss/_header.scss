@@ -9,9 +9,6 @@ header {
   height: 78px;
   align-items: center;
   background-color: #1f2021;
-  @media screen and (max-width: 538px) {
-    height: 70px;
-  }
   .container {
     height: 100%;
   }
@@ -31,6 +28,9 @@ header {
   align-items: center;
   img {
     height: 38px;
+  }
+  @media screen and (max-width: 800px) {
+    order: 2;
   }
 }
 .header-burger {
@@ -65,7 +65,7 @@ header {
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 800px) {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -81,14 +81,17 @@ header {
     transform: rotate(-45deg);
     top: 0;
   }
+  @media screen and (max-width: 800px) {
+    order: 3;
+  }
 }
 
 .header-nav {
   height: 100%;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 800px) {
     position: fixed;
-    top: 115px;
+    top: 78px;
     right: -100%;
     width: 60%;
     height: 50%;
@@ -98,10 +101,6 @@ header {
     overflow: auto;
     flex-direction: column;
     border-bottom-left-radius: 20px;
-  }
-  @media screen and (max-width: 538px) {
-    top: 70px;
-    padding-top: 45px;
   }
 
   &.active {
@@ -114,7 +113,7 @@ header {
   display: flex;
   gap: 32px;
   align-items: center;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 800px) {
     flex-direction: column;
     height: auto;
   }
@@ -124,7 +123,7 @@ header {
   display: flex;
   align-items: center;
   position: relative;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 800px) {
     height: 25px;
   }
 }
@@ -133,8 +132,7 @@ header {
   letter-spacing: 0.01em;
   color: #ffffff;
   transition: all 0.1s linear;
-  @media screen and (max-width: 1024px) {
-    flex-direction: column;
+  @media screen and (max-width: 800) {
     font-weight: 500;
     font-size: 17px;
   }

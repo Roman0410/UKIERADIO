@@ -26,7 +26,6 @@
   }
 
   .filter-item {
-    position: relative;
     @media screen and (max-width: 800px) {
       width: calc(100% / 3);
       text-align: center;
@@ -52,13 +51,16 @@
       transform: translatex(-50%);
     }
     &:hover::after {
-      width: 100%;
+      width: 80%;
+      @media screen and (max-width: 800px) {
+        width: 100%;
+      }
     }
     .current {
       &::after {
         content: "";
         height: 2px;
-        width: 100%;
+        width: 80%;
         background-color: var(--accent-color);
         display: block;
         transition: all 0.2s linear;
@@ -67,6 +69,9 @@
         bottom: -8px;
         left: 50%;
         transform: translatex(-50%);
+        @media screen and (max-width: 800px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -83,6 +88,7 @@
     overflow: hidden;
     img {
       width: 100%;
+      border-radius: 12px;
       height: 382px;
       object-fit: cover;
     }
