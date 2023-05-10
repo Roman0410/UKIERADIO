@@ -26,6 +26,7 @@
   }
 
   .filter-item {
+    position: relative;
     @media screen and (max-width: 800px) {
       width: calc(100% / 3);
       text-align: center;
@@ -249,17 +250,5 @@
     color: #ffffff;
   }
   .bazar-vizit {
-  }
-  .btn {
-    width: fit-content;
-    padding: 9px 16px;
-    background-color: #ff4136;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.43;
-    text-align: center;
-    text-transform: capitalize;
-    color: #ffffff;
   }
 }

@@ -51,6 +51,20 @@ section {
   padding: 0 15px;
 }
 
+.btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 9px 16px;
+  background-color: #ff4136;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
 header {
   position: sticky;
   z-index: 10000;
@@ -321,6 +335,80 @@ header {
   gap: 24px;
 }
 
+.services .container {
+  display: flex;
+  gap: 24px;
+}
+@media screen and (max-width: 800px) {
+  .services .container {
+    flex-direction: column;
+  }
+}
+.services .left {
+  width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .services .left {
+    width: 100%;
+  }
+}
+.services .left .service-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #ffffff;
+  max-width: 363px;
+}
+.services .sevive-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.services .sevive-card img {
+  width: 100%;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 800px) {
+  .services .sevive-card img {
+    height: 335px;
+  }
+}
+.services .service-info {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.services .right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 24px;
+}
+@media screen and (max-width: 800px) {
+  .services .right {
+    width: 100%;
+  }
+}
+.services .right .service-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #ffffff;
+  max-width: 300px;
+}
+.services .right img {
+  width: 100%;
+  height: 228px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* Слайдер */
 .slick-slider {
   position: relative;
@@ -445,7 +533,7 @@ header {
 }
 
 .footer {
-  padding: 100px 148px;
+  padding: 100px 0;
 }
 .footer .container {
   display: flex;
@@ -503,6 +591,9 @@ header {
     margin-bottom: 20px;
     gap: 0;
   }
+}
+.events .filter-item {
+  position: relative;
 }
 @media screen and (max-width: 800px) {
   .events .filter-item {
@@ -723,20 +814,6 @@ header {
   text-transform: uppercase;
   color: #ffffff;
 }
-.bazar-prew .btn {
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 9px 16px;
-  background-color: #ff4136;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.43;
-  text-align: center;
-  text-transform: capitalize;
-  color: #ffffff;
-}
-
 .back {
   margin-top: 36px;
   display: flex;

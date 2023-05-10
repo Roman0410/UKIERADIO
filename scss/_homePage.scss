@@ -35,3 +35,69 @@
 }
 .download-item {
 }
+.services {
+  .container {
+    display: flex;
+    gap: 24px;
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+  .left {
+    width: 50%;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+    .service-title {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      color: #ffffff;
+      max-width: 363px;
+    }
+  }
+  .sevive-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      @media screen and (max-width: 800px) {
+        height: 335px;
+      }
+    }
+  }
+  .service-info {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 24px;
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+    .service-title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.33;
+      color: #ffffff;
+      max-width: 300px;
+    }
+    img {
+      width: 100%;
+      height: 228px;
+      object-fit: cover;
+    }
+  }
+}
