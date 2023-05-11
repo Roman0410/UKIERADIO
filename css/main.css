@@ -409,6 +409,109 @@ header {
      object-fit: cover;
 }
 
+.event-preview .top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+}
+.event-preview .top .section-title {
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.event-preview .top a {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  text-transform: capitalize;
+  color: #bcc0c2;
+}
+.event-preview .event-prev-list {
+  display: flex;
+  gap: 24px;
+}
+.event-preview .event-prev-list .events-item {
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+}
+.event-preview .event-prev-list .events-item img {
+  width: 100%;
+  border-radius: 12px;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.event-preview .event-prev-list .date {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px 18px;
+  border-radius: 12px;
+  text-align: center;
+  background: #1f2021;
+  display: flex;
+  flex-direction: column;
+}
+.event-preview .event-prev-list .date p {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+.event-preview .event-prev-list .event-info {
+  margin-top: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .event-preview .event-prev-list .event-info {
+    position: static;
+    background: transparent;
+    padding: 20px 0;
+  }
+}
+.event-preview .event-prev-list .event-info .info {
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+.event-preview .event-prev-list .event-info .info span {
+  display: block;
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: capitalize;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.event-preview .event-prev-list .event-info .place {
+  display: flex !important;
+  align-items: center;
+  gap: 5px;
+}
+.event-preview .event-prev-list .event-info .place::after {
+  content: "";
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.7);
+  display: block;
+  border-radius: 50%;
+}
+.event-preview .event-prev-list .event-info .event-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-top: 12px;
+}
+
 /* Слайдер */
 .slick-slider {
   position: relative;
@@ -530,6 +633,88 @@ header {
 
 .newslabe {
   background: #2f80ed;
+}
+
+/*--------------------------------VIDEO-Slider------------------------------------------*/
+.video-chart {
+  position: relative;
+}
+.video-chart .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  border: none;
+  font-size: 0px;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+.video-chart .slick-arrow.slick-prev {
+  left: -50px;
+  background-image: url("../img/prev.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.video-chart .slick-arrow.slick-next {
+  right: -50px;
+  background-image: url("../img/next.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.video-chart .chart-item {
+  margin: 0 10px;
+  background: #202020;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.video-chart .chart-item .video-img {
+  position: relative;
+}
+.video-chart .chart-item .video-img img {
+  height: 175px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-chart .chart-item .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+}
+.video-chart .chart-item .play-btn img {
+  height: auto;
+  cursor: pointer;
+}
+.video-chart .chart-item .duration {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  padding: 2px 6px;
+  background: #202020;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.video-chart .chart-item .video-info {
+  padding: 12px;
+}
+.video-chart .chart-item .video-info .video-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.video-chart .chart-item .video-info .video-name {
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
 }
 
 .footer {

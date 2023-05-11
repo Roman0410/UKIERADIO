@@ -11,3 +11,16 @@ $(".news-slider").slick({
   autoplay: true,
   arrows: false,
 });
+$(".chart-list").slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
