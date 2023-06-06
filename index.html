@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Overpass:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/main.css" />
@@ -92,9 +92,15 @@
     <section class="video-chart">
       <div class="container">
         <div class="chart-list">
-          <div class="chart-item">
+          <div
+            class="chart-item"
+            data-src="https://www.youtube.com/embed/S9bCLPwzSC0"
+          >
             <div class="video-img">
-              <img src="./img/video1.jpeg" alt="" />
+              <img
+                src="http://i3.ytimg.com/vi/S9bCLPwzSC0/hqdefault.jpg"
+                alt=""
+              />
               <div class="play-btn">
                 <img src="./img/play.svg" alt="" />
               </div>
@@ -105,9 +111,15 @@
               <p class="video-name">Baby One More Time</p>
             </div>
           </div>
-          <div class="chart-item">
+          <div
+            class="chart-item"
+            data-src="https://www.youtube.com/embed/Y2NkuFIlLEo"
+          >
             <div class="video-img">
-              <img src="./img/video2.jpeg" alt="" />
+              <img
+                src="http://i3.ytimg.com/vi/Y2NkuFIlLEo/hqdefault.jpg"
+                alt=""
+              />
               <div class="play-btn">
                 <img src="./img/play.svg" alt="" />
               </div>
@@ -118,9 +130,15 @@
               <p class="video-name">Baby One More Time</p>
             </div>
           </div>
-          <div class="chart-item">
+          <div
+            class="chart-item"
+            data-src="https://www.youtube.com/embed/UdM9hLGZ1-M"
+          >
             <div class="video-img">
-              <img src="./img/video3.jpeg" alt="" />
+              <img
+                src="http://i3.ytimg.com/vi/UdM9hLGZ1-M/hqdefault.jpg"
+                alt=""
+              />
               <div class="play-btn">
                 <img src="./img/play.svg" alt="" />
               </div>
@@ -131,9 +149,16 @@
               <p class="video-name">Baby One More Time</p>
             </div>
           </div>
-          <div class="chart-item">
+
+          <div
+            class="chart-item"
+            data-src="https://www.youtube.com/embed/QYh6mYIJG2Y"
+          >
             <div class="video-img">
-              <img src="./img/video1.jpeg" alt="" />
+              <img
+                src="http://i3.ytimg.com/vi/QYh6mYIJG2Y/hqdefault.jpg"
+                alt=""
+              />
               <div class="play-btn">
                 <img src="./img/play.svg" alt="" />
               </div>
@@ -144,9 +169,15 @@
               <p class="video-name">Baby One More Time</p>
             </div>
           </div>
-          <div class="chart-item">
+          <div
+            class="chart-item"
+            data-src="https://www.youtube.com/embed/mNEUkkoUoIA"
+          >
             <div class="video-img">
-              <img src="./img/video2.jpeg" alt="" />
+              <img
+                src="http://i3.ytimg.com/vi/mNEUkkoUoIA/hqdefault.jpg"
+                alt=""
+              />
               <div class="play-btn">
                 <img src="./img/play.svg" alt="" />
               </div>
@@ -157,6 +188,24 @@
               <p class="video-name">Baby One More Time</p>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="video-popup">
+        <div class="video-card">
+          <div class="video-close">
+            <img src="./img/close.svg" alt="" />
+          </div>
+          <iframe
+            id="youtube-video"
+            width="100%"
+            height="100%"
+            style="border-radius: 12px"
+            src=""
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </section>

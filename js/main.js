@@ -12,6 +12,19 @@ $(document).ready(function () {
     $(this).toggleClass("select");
     $(".location-txt").text($(".select").text());
   });
+  $(".chart-item").click(function (event) {
+    $(".video-popup").toggleClass("open");
+    $(".video-popup").find("iframe").attr("src", $(this).data("src"));
+  });
+  function stopVideo() {
+    let video = $("#youtube-video");
+    let videoSrc = video.attr("src");
+    video.attr("src", videoSrc);
+  }
+  $(".video-close").click(function (event) {
+    $(".video-popup").removeClass("open");
+    stopVideo();
+  });
 });
 (() => {
   const refs = {

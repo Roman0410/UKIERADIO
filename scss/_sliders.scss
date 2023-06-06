@@ -151,7 +151,6 @@
 
 /*--------------------------------VIDEO-Slider------------------------------------------*/
 .video-chart {
-  position: relative;
   .slick-arrow {
     position: absolute;
     top: 50%;
@@ -184,6 +183,7 @@
     background: #202020;
     border-radius: 12px;
     overflow: hidden;
+
     .video-img {
       position: relative;
       img {
