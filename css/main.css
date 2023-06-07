@@ -67,6 +67,20 @@ section {
   color: #ffffff;
 }
 
+.Privacy_Policy .section-title {
+  margin-bottom: 24px;
+}
+.Privacy_Policy .text {
+  color: #e0e0e0;
+  line-height: 1.4;
+}
+.Privacy_Policy .title {
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 1.12;
+  margin: 20px 0;
+}
+
 .text {
   font-size: 16px;
   line-height: 1.12;
