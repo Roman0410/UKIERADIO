@@ -151,6 +151,7 @@
 
 /*--------------------------------VIDEO-Slider------------------------------------------*/
 .video-chart {
+  position: relative;
   .slick-arrow {
     position: absolute;
     top: 50%;
@@ -174,7 +175,12 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-  .container {
+  .video-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    .section-title {
+      padding-left: 15px;
+    }
   }
   .chart-list {
   }
